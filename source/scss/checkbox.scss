@@ -1,0 +1,37 @@
+
+.checkbox-label{
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s;
+
+	&:before{
+		position: absolute;
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		left: 0;
+		top:7px;
+		border: 1px solid $blue;
+		border-radius: 3px;
+		background-color: transparent;
+		transition: 0.2s;
+	}
+
+
+	&:hover:before{
+		background-color: #e9efff;
+	}
+
+}
+
+.checkbox-control:checked + .checkbox-label:before{
+	background-color: $blue;
+	background-image: url(../images/check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px 10px;
+	}
+
+
+

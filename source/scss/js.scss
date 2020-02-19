@@ -1,0 +1,52 @@
+.js{
+  border: 0;
+  margin-top: 200px;
+  padding-bottom: 147px;
+
+  &__title{
+    @include title(js);
+    margin-bottom: 40px;
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__level{
+    position: relative;
+    width: 25%;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-top: auto;
+    &:last-of-type{
+      text-align: right;
+      &:after{
+        content: "";
+        right: 0;
+      }
+    }
+
+    &:after{
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 13px;
+      border-left: 1px dotted gray;
+    }
+  }
+
+}
+
+@media (max-width:$tablet)  {
+  .js{
+    &__level{
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+}
+
+
+

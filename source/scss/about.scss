@@ -1,0 +1,76 @@
+.about{
+  border: 0;
+
+  &__title{
+    @include title(about);
+  }
+
+  &__text{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__label{
+    position: relative;
+    top:-161px;
+    left: -10%;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: $light-grey;
+  }
+
+  &__textarea{
+
+    display: block;
+    text-align: center;
+    margin: 38px auto 0;
+    width: 90%;
+    max-width: 520px;
+    height: 180px;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    resize: none;
+
+    &:valid{
+      border-color: $border-grey;
+      padding: 28px 0 8px;
+
+      & + label{
+        top:-181px;
+        font-size: 16px;
+      }
+    }
+
+    &:focus{
+      border-color: $blue;
+      padding: 28px 0 8px;
+
+      & + label{
+        top:-181px;
+        font-size: 16px;
+      }
+    }
+
+
+  }
+
+}
+
+@media (max-width:570px)  {
+  .about__label{
+    font-size: 20px;
+    left: 0%;
+  }
+}

@@ -1,0 +1,14 @@
+.main{
+  padding-top: 65px;
+  background-image: linear-gradient(to top, #fff, transparent 50%, transparent ), url(../images/bg.jpg);
+
+  background-size: 100% 161px , 100% 159px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0;
+
+  &__title{
+    font-weight: 100;
+    font-size: 70px;
+    text-align: center;
+  }
+}

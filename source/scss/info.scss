@@ -1,0 +1,73 @@
+.info{
+  padding: 0;
+  margin-top: 135px;
+  border: 0;
+
+  &__title{
+    @include title(info);
+    margin-bottom: 47px;
+  }
+
+  &__label{
+    position: relative;
+    top:-43px;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: $light-grey;
+    cursor: pointer;
+  }
+
+  &__input{
+    display: block;
+    text-align: center;
+    margin: 0 auto 0;
+    width: 90%;
+    max-width: 520px;
+    height: 60px;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+    &:valid{
+      border-color: $border-grey;
+      padding: 28px 0 8px;
+
+      & + label{
+        top: -58px;
+        font-size: 14px;
+      }
+    }
+
+    &:focus{
+      border-color: $blue;
+      padding: 28px 0 8px;
+
+      & + label{
+        top: -58px;
+        font-size: 14px;
+      }
+    }
+
+
+
+  }
+
+  &__select{
+    display: block;
+    text-align: center;
+    margin: 0 auto 25px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+  }
+}
